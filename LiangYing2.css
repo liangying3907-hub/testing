@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(146, 168, 209, 0.706);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+header h1 {
+    color: white;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 60px;
+}
+
+header ul {
+    position: absolute;
+    right: 5vh;
+    top: 0;
+    line-height: 60px;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vh;
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(105, 128, 171);
+}
+
+.menu {
+    display: none;
+}
+
+#home {
+    background-color: rgb(255, 255, 255);
+    color: rgb(105, 128, 171);
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 70px;
+    margin-bottom: 15px;
+    color: rgb(146, 168, 209);
+}
+
+#home p {
+    margin: 25px 0;
+}
+
+#about {
+    background-color: rgb(178, 194, 221);
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+}
+
+#about div {
+    padding: 2vh 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s cubic-bezier(0.15, 0.5, 0.25, 0.5);
+    border-radius: 20px;
+    flex: 200px;
+    line-height: 2;
+    color: rgb(163, 117, 117);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+#about h1 {
+    text-align: center;
+    color: white;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    color: rgb(163, 117, 117);
+}
+
+#about a {
+    color: rgb(163, 117, 117);
+    text-decoration: none;
+}
+
+#about a:hover {
+    color: rgb(255, 219, 219);
+}
+
+li {
+    list-style-type: none;
+}
+
+#about h1::after,
+#education h1::after,
+#skills h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 0.5vh auto 1.5vh;
+    border-radius: 2px;
+    background: #ffffff;
+}
+
+#education {
+    background-color: rgb(178, 194, 221);
+    color: rgb(255, 255, 255);
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+}
+
+#education div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.5vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#education h1 {
+    text-align: center;
+    color: white;
+}
+
+#education h2 {
+    color: rgb(105, 128, 171);
+}
+
+#education li {
+    padding: 5px;
+}
+
+#education a {
+    color: rgb(105, 128, 171);
+    text-decoration: none;
+}
+
+#education a:hover {
+    color: rgb(218, 226, 239);
+}
+
+#skills {
+    background-color: rgb(178, 194, 221);
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+}
+
+#skills div {
+    padding: 2vh 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills h1 {
+    text-align: center;
+    color: white;
+}
+
+#skills h2 {
+    margin-bottom: 20px;
+    color: rgb(163, 117, 117);
+}
+
+#skills a {
+    color: rgb(163, 117, 117);
+    text-decoration: none;
+}
+
+#skills a:hover {
+    color: rgb(255, 219, 219);
+}
+
+#goals {
+    background-color: rgb(247, 202, 201);
+    color: rgb(109, 66, 66);
+    padding-bottom: 2vh;
+}
+
+#goals h1 {
+    text-align: center;
+    padding-top: 4vh;
+    color: white;
+}
+
+#goals div {
+    display: block;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+}
+
+#goals p{
+    margin: 2vh 0 1vh;
+}
+
+#goals img {
+    max-width: 50%;
+    height: fit-content;
+    margin: auto;
+    display: block;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#contact {
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+    text-align: center;
+}
+
+#contact h1 {
+    color: rgb(105, 128, 171);
+    padding-bottom: 2vh;
+}
+
+#contact li {
+    display: inline;
+    padding: 2vh;
+}
+
+#contact a {
+    color: rgb(105, 128, 171);
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: rgb(218, 226, 239);
+}
+
+footer {
+    background-color: rgb(247, 202, 201);
+    color: white;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+/* short width design */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: block;
+    }
+
+    header h1{
+        margin-left: 20vh;
+    }
+
+    header li{
+        display: none;
+    }
+
+    #home{
+        text-align: center;
+        padding: 0 5vh 0;
+    }
+
+    #home h1{
+font-size: 6vh;
+    }
+
+    #home h2{
+       font-size: 3vh; 
+    }
+
+    #home p{
+        font-size: 2vh;
+    }
+
+    #goals img{
+        max-width: 70%;
+    }
+
+    #goals div{
+        padding: 0 5vh 0;
+    }
+}
